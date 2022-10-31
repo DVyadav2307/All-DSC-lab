@@ -15,6 +15,7 @@ int main()
     deletion(arr,n,loc);
     for(int i=0;i<n-1;i++)
     printf("\n %d",arr[i]);
+    return 0;
 }
 int deletion(int arr[],int n,int loc)
 {
