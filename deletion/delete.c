@@ -3,7 +3,7 @@ int deletion();
 int main()
 {
     int arr[100],n,loc;
-    printf("enter the lenght of the dtat:");
+    printf("enter the lenght of the data:");
     scanf_s("%d",&n);
     for(int i=0;i<n;i++)
     {
