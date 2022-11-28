@@ -39,6 +39,23 @@ void createList()
     else
     printf("\nThe list is already created\n");
 }
+void traverse()
+{
+    struct node* temp;
+  
+    // List is empty
+    if (start == NULL)
+        printf("\nList is empty\n");
+  
+    // Else print the LL
+    else {
+        temp = start;
+        while (temp != NULL) {
+            printf("Data = %d\n", temp->info);
+            temp = temp->link;
+        }
+    }
+}
 void insertAtFront()
 {
     int data;
@@ -53,6 +70,7 @@ void insertAtFront()
     // assigned to start
     temp->link = start;
     start = temp;
+    traverse();
 }
 void insertAtEnd()
 {
@@ -73,6 +91,7 @@ void insertAtEnd()
         head = head->link;
     }
     head->link = temp;
+    traverse();
 }
 void insertAtPosition()
 {
@@ -94,6 +113,7 @@ void insertAtPosition()
     }
     newnode->link = temp->link;
     temp->link = newnode;
+    traverse();
 }
 void deleteFirst()
 {
@@ -105,6 +125,7 @@ void deleteFirst()
         start = start->link;
         free(temp);
     }
+    traverse();
 }
 void deleteEnd()
 {
@@ -120,6 +141,7 @@ void deleteEnd()
         free(temp);
         prevnode->link = 0;
     }
+    traverse();
 }
 void deletePosition()
 {
@@ -152,6 +174,7 @@ void deletePosition()
         // Free memory
         free(position);
     }
+    traverse();
 }
   
 
