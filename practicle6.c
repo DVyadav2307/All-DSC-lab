@@ -4,7 +4,7 @@
 struct node {
     int info;
     struct node* link;
-};
+}
 struct node* start = NULL;
 void createList()
 {
