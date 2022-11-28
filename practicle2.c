@@ -24,11 +24,11 @@ int main()
 	for (int i = 0; i < c1_elem; i++)
 	{	for (int j = 0; j < r1_elem; j++)
 		{	scanf_s("%d", &n[j][i]);
-			x[j][i]=m[j][i]+n[j][i];
+			x[j][i]=m[j][i]-n[j][i];
 		}
 	}
 	//printing matrix
-	printf("\nthe additionj of maxtrix is follows-");
+	printf("\nthe subtraction of maxtrix is follows-");
 	for (int i = 0; i < c1_elem; i++)
 	{
 		printf("\n");
